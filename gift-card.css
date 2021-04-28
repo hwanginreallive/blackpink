@@ -1,0 +1,606 @@
+*{
+	padding: 0 0;
+	margin: 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.header{
+	width: 100%;
+	height: 30px;
+	background-color: #ffb8c1;
+	text-align: center;
+	font-size: 13px;
+	padding-top: 17px;
+	color: black;
+}
+.menu{
+	width: 100%;
+	text-decoration: none;
+	height: 90px;
+	background-color: black;
+	/* position: sticky; */
+	top: 0px;
+	position: -webkit-sticky;
+	z-index: 1;
+}
+.menu ul{
+	padding-left: 5px;
+	padding-top: 20px;
+}
+.menu ul li{
+	float: left;
+	left: 20px;
+    right: 40px;
+	padding-right: 15px;
+	list-style: none;
+	color: #ffb8c1;
+	text-transform: uppercase;
+	position: relative;
+}
+.menu .sub{
+	position: absolute;
+	display: none;
+	width: 120px;
+	box-shadow:  5px 10px 18px #888888;
+}
+.menu .sub li{
+	height: 35px;
+	left: 0px;
+	padding: 0;
+	margin: 0;
+}
+.menu li:hover .sub{
+	height: 115px;
+	position: absolute;
+	top:35px;
+	display: block;
+	background-color: black;
+	padding: 0;
+	
+}
+.menu ul li a{
+	color: #ffb8c1;
+	list-style: none;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 50px;
+}
+.menu ul li a:hover{
+	color: #b12853;
+}
+.menu .play{
+	position: absolute;
+	left: 40%;
+	right: 40%;
+}
+.menu ul li >.logo{
+	position: absolute;
+	display: block;
+	margin-top: -15px;
+	height: 80px;
+	width: 276.8px;
+	
+}
+.menu .ti-shopping-cart{
+	position: relative;
+	font-size: 30px;
+	float: right;
+	padding-right: 30px;
+	padding-top: 15px;
+	color: #ffb8c1;
+}
+.ti-shopping-cart:hover{
+	color: #b12853;
+	transition: all 1s;
+}
+.menu .ti-menu{
+	position: absolute;
+	color: #ffb8c1;
+	display: inline-block;
+	padding-top: 15px;
+	font-size: 25px;
+	left: 35px;
+	display: none;
+}
+.menu .overlay{
+	position: fixed;
+	right: 0;
+	top:0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0,0.3);
+	display: none;
+	animation: fadeIn linear 0.3s;
+}
+.menu .overlay1{
+	position: fixed;
+	right: 0;
+	top:0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0,0.3);
+	display: none;
+	animation: fadeIn linear 0.3s;
+}
+.menu .mobile{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	padding-top: 50px;
+	width: 320px;
+	background-color:black;
+	list-style: none;
+	transform: translateX(-100%);
+	opacity: 0;
+	transition-duration: 1s;
+	box-shadow: 4px 0px 10px 1px #ffb8c1;
+}
+.menu .mobile .ti-search{
+	color: #ffb8c1;
+	position: absolute;
+	left: 10px;
+	top: 60px;
+	font-size: 30px;
+}
+.menu .mobile .input-search{
+	position: absolute;
+	top:60px;
+	height: 30px;
+	width: 200px;
+	
+}
+.menu .mobile .mobilelist{
+	margin-top: 50px;
+	margin-left: 50px;
+	text-transform: uppercase;
+}
+.menu .mobile a	{
+	display: block;
+	padding-top: 30px;
+	font-size: 20px;
+	text-decoration: none;
+	color :#ffb8c1;
+}
+.menu .mobile .ti-close{
+	position: absolute;
+	color: #ffb8c1;
+	font-size: 25px;
+	top: 30px;
+	right: 20px;
+}
+.input-mobile:checked ~.overlay{
+	display: block;
+}
+.input-mobile:checked~  .mobile{
+		transform: translateX(0%);
+		opacity: 1;
+		transition-duration: 1s; ;
+}
+.menu .shopping{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 320px;
+	background-color: black;
+	color: #ffb8c1;
+	text-align: center;
+	transform: translateX(110%);
+	z-index: 2;
+	height: 800px;
+	transition-duration: 1s;
+	box-shadow: -2px 0px 10px 1px #ffb8c1;
+	opacity: 0;
+}
+.menu .shopping .ti-close{
+	position: absolute;
+    right: 280px;
+    top: 23px;
+    font-size: 25px;
+    display: block;
+}
+.menu .shopping  span{
+	display: inline-block;
+	padding-top: 20px;
+	font-size: 20px;
+}
+.input-shopping{
+	position: absolute;
+	left: 100px;
+}
+.input-shopping:checked ~.overlay1{
+	display: block;
+}
+.input-shopping:checked ~.shopping{
+	transform: translateX(0%);
+	opacity: 1;
+	transition-duration: 1s; ;
+}
+.item-name-1{
+	display: flex;
+	justify-content: space-around;
+}
+.shopping .name{
+	padding-bottom: 50px;
+}
+.shopping-item{
+	display: flex;
+	justify-content: space-around;
+}
+.shopping-list .item-card {
+	width: 80px;
+	height: 80px;
+	background-color: #ffb8c1;
+}
+.shopping-list p{
+	padding-bottom: 20px;
+	color: #ffb8c1;
+}
+.shopping-list .sanpham{
+	padding-bottom: 30px;
+}
+.shopping-list .soluong .number{
+	width: 60px;
+	font-size: 18px;
+	background-color: black;
+	color: #ffb8c1;
+}
+.shopping-list .soluong{
+	padding-bottom: 30px;
+}
+.shopping-list .gia{
+	padding-bottom: 30px;
+}
+
+.shopping-list .total{
+	display: flex;
+	flex-direction: row;
+	float: left;
+	width: 320px;
+	justify-content: space-between;
+}
+.shopping-list{
+	text-transform: capitalize;
+}
+
+.shopping-list .total .left {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	flex: 3;
+}
+ .total .right{
+	border-top: 2px solid #ffb8c1;
+	display: flex;
+	flex: 1;
+	max-width: 150px;
+	flex-direction: column;
+}
+ .total  {
+	padding-bottom: 20px;
+}
+.shopping-list .tong{
+	display: flex;
+	flex-direction: row;
+	width: 320px;
+	justify-content: space-between;
+	border-top: 5px solid #b12853;
+}
+.shopping-list .tong .trai{
+	flex: 3;
+}
+
+.shopping-list .phai{
+	flex: 1;
+}
+.shopping-list .thanhtoan{
+	margin-top: 50px;
+	float:right;
+	padding-right: 10px;
+}
+.shopping-list .thanhtoan button{
+	font-size: 20px;
+	background-color: black;
+	color: #b12853;
+	border: 2px solid #b12853 ;
+}
+.gift-card{
+    margin-left: 100px;
+    margin-right: 100px;
+	box-shadow:  5px 10px 18px #ffb8c1;
+	display: flex;
+}
+.container .img img{
+    width: 655px;
+    height: 655px;
+}
+body{
+   	background-image: linear-gradient(#211e43,#8478be);
+}
+.about{
+    padding-left: 40px;
+    color: #ffb8c1;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+	margin-right: 30px;
+}
+.about .name{
+    margin-top: 10%;
+    width: 500px;
+}
+.about  ul {
+    margin-top: 50px;
+    display: inline-block;  
+}
+.price:hover{
+    background-color: #211e43;
+    color: rgb(173, 44, 44);
+}
+.price1:hover{
+    background-color: #211e43;
+    color: rgb(173, 44, 44);
+}
+.price2:hover{
+    background-color: #211e43;
+    color: rgb(173, 44, 44);
+}
+.price3:hover{
+    background-color: #211e43;
+    color: rgb(173, 44, 44);
+}
+.about .price{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+	font-size: 25px;
+	margin-left: 5px;
+	border: 2px solid white;
+    background-color: white;
+	cursor: pointer;
+}
+.about .price1{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    /* margin-left: 5px; */
+	font-size: 25px;
+	border: 2px solid white;
+    background-color: white;
+	cursor: pointer;
+}
+
+.about .price2{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    /* margin-left: 5px; */
+	font-size: 25px;
+	border: 2px solid white;
+    background-color: white;
+	cursor: pointer;
+}
+.about .price3{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    /* margin-left: 5px; */
+	font-size: 25px;	
+	border: 2px solid white;
+    background-color: white;
+	cursor: pointer;
+}
+.check-price:checked~.price{
+    border: 2px solid #ffb8c1;
+	background-color: black;
+}
+.check-price1:checked~.price1{
+    border: 2px solid #ffb8c1;
+	background-color: black;
+
+}
+.check-price2:checked~.price2{
+    border: 2px solid #ffb8c1;
+	background-color: black;
+
+}
+.check-price3:checked~.price3{
+    border: 2px solid #ffb8c1;
+	background-color: black;
+
+}
+
+.gift-card .buy{
+	display: block;
+	background-color: #ffb8c1;
+	color: black;
+	width: 150px;
+	height: 40px;
+	position: absolute;
+    margin-top: 50px;
+	font-size: 25px;
+	box-sizing: border-box;
+	padding-left: 11px;
+	padding-top: 6px;
+	text-transform: uppercase;
+	text-decoration: none;
+    border: 2px solid rgb(173, 44, 44);
+	border-radius: 5px;
+}
+.gift-card .about .info{
+    padding-top: 250px;
+}
+.gift-card .about span{
+    display: block;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: justify;
+}
+.information{
+ 	width: 100%;
+	display: inline-block;
+	height: 100px;
+	background-color: #28254a;
+	margin-top: 50px;
+	color: #ccc;
+}
+
+.information a {
+	line-height: 50px;
+	font-size: 30px;
+	color: #ccc;    
+	padding-left: 20px;
+	list-style: none;
+	text-decoration: none;
+}
+.information h1{
+	padding-left: 230px;
+	
+}
+.information .info-list{
+	padding-top: 10px;
+	position: absolute;
+	left: 10%;
+}
+.information .info-list a:hover{
+	color:  #e99719;
+}
+.information .address{
+	display: block;
+	float: right;
+	padding-right: 150px;
+}
+
+.information .address span{
+	display: block;
+	padding-top: 10px;
+}
+
+@media (min-width : 768px) and (max-width:1224px){
+	.header{
+		display: none;
+	}
+	.menu ul li a{
+		display: none;
+	}
+	.menu .ti-menu{
+		position: absolute;
+		display: block;
+		left: 25px;
+	}
+	.menu .play{
+		left: 33%;
+	}
+	.information .address {
+		display: none;
+	}
+
+	.information h1{
+		padding-left: 40%;	
+	}
+	.information .info-list{
+		padding-left: 20%;
+	}
+	.gift-card{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.about .name{
+		width: 250px;
+	}
+	.gift-card{
+		display: inline-block;
+	}
+	.info{
+		height: 300px;
+		padding-top:100px;
+		margin: 0;
+	}
+}	
+@media (min-width : 1226px) and (max-width:1511px){
+	.about{
+		width: 500px;
+	}
+	.about .name{
+		width: 250px;
+	}
+	
+}
+@media  (min-width : 480px) and (max-width:765px){
+	.header{
+		display: none;
+	}
+	.menu .ti-menu{
+		display: block;
+		margin-left: -5px;
+	}
+	.menu ul li{
+		display: none;
+	}
+	.menu .play{
+		display: block;	
+		left: 22%;
+	}
+	.gift-card .container{
+		height: 30px;
+		
+		display: block;
+	}
+	.gift-card{
+		width: 300px;
+		height: 500px;
+		box-shadow:  5px 10px 18px #888888;
+	}
+	.info{
+		display: none;
+	}
+	.about .price, .price1, .price2, .price3{
+		width: 50px;
+	}
+
+	.gift-card .img .img1{
+		width: 300px;
+		height: 300px;
+	}
+	.about .name{
+		width: 300px;
+		text-align: center;
+	}
+	.gift-card .about{
+		position: absolute;
+		top: 400px;
+		width: 300px;
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+	.information .address{
+		display: none;
+	}
+	.information{
+		margin-top: 400px;
+	}
+	.information .info-list{
+		padding-left: 10%;
+		padding-right:10%;
+	}
+	.about ul {
+		width: 300px;
+	}
+	.information h1{
+		padding-left: 40%;	
+	}
+}
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}

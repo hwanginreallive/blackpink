@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ quà tặng</title>
+    <link rel="stylesheet" href="gift-card.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="header">
+        <p>CHÚNG TÔI ĐANG CỐ GẮNG HẾT SỨC ĐỂ GIAO HÀNG ĐÚNG HẠN, TUY NHIÊN, CHÚNG TÔI CÓ THỂ GẶP PHẢI SỰ CHẬM TRỄ Ở ĐÂU ĐÓ
+            TRÊN
+            ĐƯỜNG ĐI KHI CHÚNG TÔI CỐ GẮNG GIỮ AN TOÀN CHO MỌI NGƯỜI.</p>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="">
+                    Sản Phẩm
+                    <i class="ti-angle-down"></i>
+                </a>
+                <ul class="sub">
+                    <li><a href="" class="sub1">the show</a></li>
+                    <li><a href="" class="sub1">ice cream</a></li>
+                    <li><a href="" class="sub1">hylt</a></li>
+                </ul>
+            </li>
+            <li><a href="music.html">âm nhạc</a></li>
+            <li><a href="gift-card.html">thẻ quà tặng</a></li>
+            <a href="banhang.html">
+                <li class="play">
+                    <img class="logo" src="img/logo.webp" alt="">
+                </li>
+            </a>
+            <label for="shopping-input" class="ti-shopping-cart"></label>
+            <label for="mobile-input" class="ti-menu"></label>
+        </ul>
+        <input type="checkbox" id="mobile-input" hidden class="input-mobile">
+        <label for="mobile-input" class="overlay">
+        </label>
+        <div class="mobile">
+            <label for="mobile-input"><i class="ti-close"></i></label>
+            <div class="mobilelist">
+                <li><i class="ti-search"></i>
+                    <input type="search" id="search" class="input-search" placeholder="search">
+                </li>
+                <li><a href="banhang.html">Trang Chủ</a></li>
+                <li><a href="">Sản Phẩm</a></li>
+                <li><a href="music.html">âm nhạc</a></li>
+                <li><a href="gift-card.html">thẻ quà tặng</a></li>
+                <li><a href="">Giỏ hàng</a></li>
+                <li><a href="#information">Liên hệ</a></li>
+            </div>
+        </div>
+        <input type="checkbox" id="shopping-input" hidden class="input-shopping">
+        <label for="shopping-input" class="overlay1">
+        </label>
+        <div class="shopping">
+            <label for="shopping-input"><i class="ti-close"></i></label>
+            <span class="name">Giỏ hàng của bạn</span>
+            <div class="shopping-list">
+                <div class="item-name-1">
+                    <p>Sản phẩm</p>
+                    <p>Số Lượng</p>
+                    <p>Giá</p>
+                </div>
+                <div class="shopping-item">
+                    <div class="sanpham">
+                        <img class="item-card" src="./img/img2.webp" alt="">
+                    </div>
+                    <div class="soluong">
+                        <span><input aria-label="quantity" class="number" name="" type="number" value=""></span>
+                    </div>
+                    <div class="gia">
+                        <span>$50</span>
+                    </div>
+                </div>
+                <div class="shopping-item">
+                    <div class="sanpham">
+                        <img class="item-card" src="./img/img5.webp" alt="">
+                    </div>
+                    <div class="soluong">
+                        <span><input aria-label="quantity" class="number" name="" type="number" value=""></span>
+                    </div>
+                    <div class="gia">
+                        <span>$50</span>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="left">
+                        <span>Thành tiền:</span>
+                        <span>Phí ship</span>
+                    </div>
+                    <div class="right">
+                        <span>$100</span>
+                        <span>$25</span>
+                    </div>
+                </div>
+                <div class=" tong">
+                    <span class="trai">Tổng số tiền:</span>
+                    <span class="phai">$125</span>
+                </div>
+                <div class="thanhtoan">
+                    <button>Thanh Toán</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+        <div class="gift-card">
+            <div class="container">
+                <div class="img">
+                    <img class="img1" src="./img/gift-card1.jpg" alt="">
+                </div>
+            </div>
+            <div class="about">
+                <div class="name">thẻ quả tặng</div>
+                <ul >
+                    <input type="checkbox" hidden id="price-check" class="check-price" >
+                    <input type="checkbox" hidden id="price-check1" class="check-price1">
+                    <input type="checkbox" hidden id="price-check2" class="check-price2">
+                    <input type="checkbox" hidden id="price-check3" class="check-price3">
+                    <label for="price-check" class="price ">$25</label>
+                    <label for="price-check1" class="price1">$50</label>
+                    <label for="price-check2" class="price2">$100</label>
+                    <label for="price-check3" class="price3">$200</label>
+                </ul>
+                <a href="" class="buy">đặt hàng</a>
+                <div class="info">
+                    <span>MUA SẮM CHO NGƯỜI KHÁC NHƯNG KHÔNG CHẮC CHẮN NHỮNG GÌ ĐỂ CUNG CẤP CHO HỌ?</span>
+                    <span>HÃY TẶNG HỌ MÓN QUÀ ĐƯỢC LỰA CHỌN VỚI MỘT THẺ QUÀ TẶNG CỬA HÀNG SBTC CỦA CHÚNG TÔI.</span>
+                    <span>THẺ QUÀ TẶNG ĐƯỢC GỬI QUA EMAIL VÀ CHỨA HƯỚNG DẪN SỬ DỤNG KHI THANH TOÁN. THẺ QUÀ TẶNG CỦA CHÚNG TÔI KHÔNG CÓ PHÍ XỬ
+                        LÝ BỔ
+                        SUNG.</span>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+                <h1>About us</h1>
+                <div class="info-list">
+                    <a href=https://www.facebook.com/hwangtriple2 target="blank"><i class="ti-facebook"></i></a>
+                    <a href="https://www.instagram.com/hoangnguyen_320" target="blank"><i class="ti-instagram"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-youtube"></i></a>
+                    <a href="#"><i class="ti-email"></i></a>
+                </div>
+                <div class="address">
+                    Địa chỉ: Số 23, Đường Z115, Xã Quyết Thắng, TP Thái Nguyên
+                    <span>Tổng đài hỗ trợ: 19001221</span>
+                </div>
+        </div>
+</body>
+</html>
